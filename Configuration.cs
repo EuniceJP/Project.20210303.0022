@@ -16,7 +16,7 @@ namespace DesktopIniExcludeUnnecessaryItems
     public void Load()
     {
       var path = System.IO.Path.Combine(
-        System.IO.Path.GetDirectoryName(System.Reflection.Assembly.GetExecutingAssembly().Location),
+        AppContext.BaseDirectory,
         @"Configuration.json"
       );
 
